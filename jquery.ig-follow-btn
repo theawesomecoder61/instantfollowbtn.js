@@ -1,0 +1,37 @@
+/*
+
+work in progress
+
+I put it here so I won't loose it.
+
+*/
+
+  (function($){
+    $.fn.igFollowBtn = function(options) {
+      var t = $(this);
+      var ttoken = "299776415.5b9e1e6.b1fafe971e064a508d6bd25037c99f55";
+      var iid = "431b8e02d1684282943a81c0779ee8cb";
+      var defaults = { 
+        userID: "25025320"
+      }
+      var options = $.extend(defaults, options);
+
+      var uid = options.userID;
+      $.ajax({
+        type: "GET",
+        dataType: "jsonp",
+        url: "https://api.instagram.com/v1/users/" + uid + "/?access_token=299776415.5b9e1e6.b1fafe971e064a508d6bd25037c99f55",
+        success: function(data) {
+          var fn = data.data.full_name.toString();
+          t.html(fn);
+        }
+      });
+
+      return this.each(function() {
+
+        // get the name of the id
+
+
+      }); 
+    }; 
+  })(jQuery);
