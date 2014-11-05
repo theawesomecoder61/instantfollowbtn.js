@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+/* you need to keep the @import! */
+
+.ig-btn .btn {
+  background-image: url(http://d36xtkk24g8jdx.cloudfront.net/bluebar/39ac0a0/images/shared/noise-2.png), -webkit-linear-gradient(top, #517fa4, #306088);
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 1px #000;
+  color: #fff;
+  font-family: Pacifico, sans-serif;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #000;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.ig-btn .btn:hover {
+  box-shadow: inset 0px 0px 5px #000;
+  text-shadow: 0px 0px 5px #000;
+}
+.ig-btn .followers {
+  background: #e2e2e2;
+  font-family: sans-serif;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  padding: 6px;
+}
+
+
+.count {
+  display: inline-block;
+  font-family: Pacifico, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.count-num {
+  background: #fff;
+  border: 1px solid #d6d5d2;
+  border-radius: 3px;
+  color: #999896;
+  line-height: 11px;
+  min-width: 34px;
+  padding: 6px 8px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: -20px; 
+}
+.count-num.front {
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  position: absolute;
+  z-index: 900;
+}
+.flip .count-num.front {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  z-index: 900;
+}
+.count-num:after,.count-num:before {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.count-num:before {
+  border-width: 6px;
+  top: 6px;
+}
+.count-num:after {
+  border-width: 4.5px;
+  top: 7.5px;
+}
+.count-num {
+  margin-left: 3px;
+}
+.count-num:before {
+  border-right-color: #d6d5d2;
+}
+.count-num:after, .count-num:before {
+  right: 100%;
+}
+.count-num:after {
+  border-right-color: #fff;
+}
