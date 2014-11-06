@@ -1,5 +1,5 @@
   (function($){
-    $.fn.igFollowBtn = function(options) {
+    $.fn.instantfollowbtn = function(options) {
 
       // variables!
       var t = $(this);
