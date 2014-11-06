@@ -1,4 +1,4 @@
-jquery.ig-follow-btn
+instantfollowbtn.js
 =======================
 
 A follow button for Instagram.
