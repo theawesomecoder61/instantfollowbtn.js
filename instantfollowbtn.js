@@ -38,6 +38,8 @@
           t.find(".btn").text(btxt);
           $(".count-num").hide();
 
+          t.attr("href", "http://instagram.com/" + un);
+          
           // some events
           var tog = false;
           if(options.toggle == "click") {
