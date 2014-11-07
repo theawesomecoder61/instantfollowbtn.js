@@ -20,7 +20,7 @@
       var options = $.extend(defaults, options);
 
       // add a class and some html
-      t.addClass("ig-btn").html("<span class='btn'></span><div class='count'><div class='count-num front'>Hello!</div></div>");
+      t.addClass("ig-btn").html("<span class='btn'></span><div class='count'><div class='count-num front'></div></div>");
 
       // get some info about the user
       $.ajax({
