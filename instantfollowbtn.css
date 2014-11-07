@@ -16,7 +16,6 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .ig-btn .btn:hover {
   box-shadow: inset 0px 0px 5px #000;
@@ -37,7 +36,6 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  cursor: default;
 }
 .count-num {
   background: #fff;
