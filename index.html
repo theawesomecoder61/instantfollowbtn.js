@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>instantfollowbtn.js by theawesomecoder61</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>instantfollowbtn.js</h1>
+        <p>A follow button for Instagram.</p>
+
+        <p class="view"><a href="https://github.com/theawesomecoder61/instantfollowbtn.js">View the Project on GitHub <small>theawesomecoder61/instantfollowbtn.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/theawesomecoder61/instantfollowbtn.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/theawesomecoder61/instantfollowbtn.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/theawesomecoder61/instantfollowbtn.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome!</h2>
+
+<h3>
+<a id="what-is-instantfollowbtnjs" class="anchor" href="#what-is-instantfollowbtnjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is instantfollowbtn.js?</h3>
+
+<p>instantfollowbtn.js allows you to add an Instagram follow button right on your website.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies?</h2>
+
+<p>Only one, jQuery. jQuery actually makes the plugin unbelievably easy to use.</p>
+
+<h2>
+<a id="how-to-use-instantfollowbtnjs" class="anchor" href="#how-to-use-instantfollowbtnjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use instantfollowbtn.js?</h2>
+
+<p><strong>1. First, drop in any version of jQuery. *Version 2.0+ is recommended.</strong>*</p>
+
+<p><code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;</code></p>
+
+<p><strong>2. Next, put in instantfollowbtn.js and the stylesheet (don't forget about it!).</strong></p>
+
+<pre><code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/instantfollowbtn.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="path/to/instantfollowbtn.css"&gt;
+</code></pre>
+
+<p><strong>3. And lastly, your Javascript.</strong></p>
+
+<pre><code>&lt;script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/instantfollowbtn.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="path/to/instantfollowbtn.css"&gt;
+&lt;script&gt;
+$(document).ready(function() {
+  $(".myButton").instantfollowbtn();
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>Don't forget your HTML! It's quite important!</p>
+
+<p>
+You can leave out the href because the plugin will add a href once you click on the button (it will take you to the user's profile page).</p>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<p>Here is a working example on Codepen: <a href="http://codepen.io/theawesomecoder61/pen/bCHEz">http://codepen.io/theawesomecoder61/pen/bCHEz</a></p>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h4>
+<a id="-accesstoken---string" class="anchor" href="#-accesstoken---string" aria-hidden="true"><span class="octicon octicon-link"></span></a>* accessToken - <em>string</em>
+</h4>
+
+<p>Allows the plugin to access your Instagram account to get the user's info. We don't see, use or track this information, so you're safe!</p>
+
+<h4>
+<a id="-clientid---string" class="anchor" href="#-clientid---string" aria-hidden="true"><span class="octicon octicon-link"></span></a>* clientID - <em>string</em>
+</h4>
+
+<p>Access the Instagram API and allows you to get info such as profiles or pictures.</p>
+
+<h4>
+<a id="primarytext---string" class="anchor" href="#primarytext---string" aria-hidden="true"><span class="octicon octicon-link"></span></a>primaryText - <em>string</em>
+</h4>
+
+<p>Customize the button's text on the left side.</p>
+
+<h4>
+<a id="secondarytext---string" class="anchor" href="#secondarytext---string" aria-hidden="true"><span class="octicon octicon-link"></span></a>secondaryText - <em>string</em>
+</h4>
+
+<p>Customize the button's text on the right side. Choose from:</p>
+
+<ul>
+<li>
+<strong>#followers#</strong> - get the user's followers count</li>
+<li>
+<strong>#following#</strong> - get the user's following count</li>
+<li>
+<em>&lt; whatever you want &gt;</em> - set your own text (don't actually put <em>&lt; whatever you want &gt;</em>)</li>
+</ul>
+
+<h4>
+<a id="-userid---integer" class="anchor" href="#-userid---integer" aria-hidden="true"><span class="octicon octicon-link"></span></a>* userID - <em>integer</em>
+</h4>
+
+<p>The ID of a user you want for the follow button. Don't know your user ID? Scroll down to see a user ID finding tool.</p>
+
+<hr>
+
+<p>The options with a ***** means it is required and the plugin won't function without that option.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/theawesomecoder61">theawesomecoder61</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
