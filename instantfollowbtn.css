@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+/* you need to keep the @import! */
+
+/* primary */
+a.ig-btn {
+  text-decoration: none;
+}
+.ig-btn .btn {
+  background-image: url(http://d36xtkk24g8jdx.cloudfront.net/bluebar/39ac0a0/images/shared/noise-2.png), -webkit-linear-gradient(top, #517fa4, #306088);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: inset 0px 0px 1px #000;
+  color: #fff;
+  font-family: Pacifico, sans-serif;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #000;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.ig-btn .btn:hover {
+  box-shadow: inset 0px 0px 5px #000;
+  text-shadow: 0px 0px 5px #000;
+}
+.ig-btn .followers {
+  background: #e2e2e2;
+  font-family: sans-serif;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  padding: 6px;
+}
+
+/* secondary */
+.secondary {
+  background-image: url(http://d36xtkk24g8jdx.cloudfront.net/bluebar/39ac0a0/images/shared/noise-2.png), -webkit-linear-gradient(top, #517fa4, #306088);
+  box-shadow: inset 0px 0px 1px #000;
+  color: #fff;
+  font-family: Pacifico, sans-serif;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #000;
+  padding: 4px 8px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
